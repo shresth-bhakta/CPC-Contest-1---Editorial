@@ -11,18 +11,6 @@
  
 using namespace std;
  
-int binexp(int a, int b, int m){
-    int result = 1;
-    while(b > 0){
-        if(b&1){
-            result = (result * a)%m;
-        }
-        a = (a*a)%m;
-        b >>= 1;
-    }
-    return result;
-}
-
 bool static cmp(pii a, pii b){
     return a.ss < b.ss;
 }

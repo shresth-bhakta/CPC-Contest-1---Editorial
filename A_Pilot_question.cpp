@@ -10,19 +10,7 @@
 #define fr1 for(int i=1; i<=n; i++)
  
 using namespace std;
- 
-int binexp(int a, int b, int m){
-    int result = 1;
-    while(b > 0){
-        if(b&1){
-            result = (result * a)%m;
-        }
-        a = (a*a)%m;
-        b >>= 1;
-    }
-    return result;
-}
- 
+
 int32_t main()
 {
     int t; cin >> t;
